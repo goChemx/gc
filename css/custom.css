@@ -1,0 +1,501 @@
+/* =================================================================== 
+ *
+ *  Glint v1.0 Custom Stylesheet
+ *  11-20-2017
+ *
+ * =================================================================== */
+.header-nav{
+    width: 300px;
+    opacity: 0.9;
+  }
+@media only screen and (max-width: 500px) {
+  .header-nav{
+    width: 280px;
+    padding: 3.6rem 3rem 3.6rem 5rem;
+  }
+}
+.header-nav__list {
+    /*font-family: "montserrat-light", sans-serif;*/
+    font-size: 20px; letter-spacing: 0.5px;
+    
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+.header-nav__list li{
+  margin-bottom:5px;
+}
+
+@media only screen and (min-width: 500px) {
+  .home-content__main {
+    padding-top: 2rem;
+  }
+}
+.home-content__buttons {
+  padding-top: 2rem;
+}
+.home-content__scroll {
+    bottom: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .home-content__main {
+    padding-top: 12rem;
+  }
+  .home-content__main .home-weare{
+    display:block;
+    text-transform:none;
+  }
+  .home-content__buttons {
+  padding-top: 0rem;
+  }
+}
+
+.home-content {
+  padding-bottom: 10rem;
+}
+.home-content h3{
+  font-family: 'Open Sans';
+  text-transform: initial; font-weight: 700;
+}
+.col-full .subhead {
+    margin-bottom: 3rem;
+}
+.s-about, .s-services, .s-works, .s-clients, .s-contact {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+
+strong, b {
+    /*font-family: inherit;*/
+    font-weight:bold;
+}
+
+.row h1,
+.service-icon h3.h2 {
+  font-family: "Google Sans Display";
+  /*font-family: 'Source Sans Pro',sans-serif;*/
+}
+.home-content h1, .s-about h1{
+  letter-spacing: 0rem;
+  font-weight: 300;
+  font-family: 'Google Sans Display',sans-serif;
+  /*font-family: 'Open Sans',sans-serif;*/
+}
+
+/*----------------------------------------------------------- Home -----------------------------------------------*/
+.s-home {
+  /*background: #987af9 center top no-repeat;*/
+}
+@media only screen and (max-width: 500px){
+.s-home {
+    background-position: -430px center !important;
+  }
+}
+.header-logo a {
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px){
+.header-logo {
+  left: 15px;
+  top: 55%;
+}
+.header-logo a {
+  width: 180px;
+}}
+
+/***************************************************/
+@media only screen and (max-width: 700px){
+.home-content__buttons {
+    text-align: left;
+}}
+
+.cbtn{
+  /*bootstraped*/
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  border: 1px solid transparent;
+  
+  padding: 1.2rem 3rem;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 1.7rem;
+  transition: all .2s ease-in-out;
+  line-height: 1.5;
+  
+  letter-spacing: .03em;
+  /*text-transform: uppercase;*/
+  font-weight: 700;
+}
+.cbtn-home{
+  margin-top: 2rem;
+}
+.cbtn-danger {
+    margin-right: 1.8rem;
+    color: #fff;
+    background-color: #ff3b30;
+    border-color: #ff2317;
+    border-radius: 50px;
+}
+.cbtn-danger:active, .cbtn-danger:active:focus, .cbtn-danger:focus, .cbtn-danger:hover {
+    color: #fff;
+    background-color: #fc0d00;
+    border-color: #d80b00;
+}
+
+.cbtn-link {
+    border: 1px solid;
+}
+
+@media only screen and (max-width: 800px){
+.home-content h1{
+  margin-bottom:1rem;  
+}
+.home-content__buttons {
+    /*display: flex;
+    align-items: center;*/
+}
+.cbtn-link {
+    margin-left:1rem;   
+}
+}
+
+
+@media only screen and (max-width: 500px){
+.home-content__main{
+  width:90%;
+  text-align: center;
+}
+.home-content h1 {
+    margin-bottom: 0;
+}
+.home-content__buttons { 
+    text-align: center;
+}
+.cbtn-danger {
+    margin-right: 0;
+    }
+  .cbtn-link {
+    margin:2rem 0 0 0;  
+    text-transform: uppercase;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------- About ----------------------------------------------------*/
+.s-about{
+  background:linear-gradient(135deg,#56ab2f,#a8e063);
+}
+.s-about h1{
+  /*font-weight: 700; letter-spacing: 0.1rem;*/
+}
+.about-desc {
+    font-family: 'Open Sans';
+    /*font-size: 22px;*/
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.1px;
+    font-size: 2.4rem;
+    text-shadow: 0.1px 0.1px 0px #000 !important;
+}
+.about-desc b{
+    text-shadow: none;
+  }
+.stats__count{
+  font-family: inherit;
+  /*font-family: "Ubuntu", sans-serif;*/
+  font-weight:700;
+}
+.about-stats {
+    max-width: 75%;
+}
+.stats h5 {
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+/*------------------------------------------------------------ Services ---------------------------------------------*/
+.s-services{
+  /*background-color:#e6e6e6;*/
+  background:#f0f6f5;
+}
+/*.services-list .service-icon {
+  float: none;
+  text-align: center;
+}*/
+
+@media only screen and (max-width: 1000px) {
+  /*.services-list .service-text {
+    margin-left: 0rem;
+  }*/
+}
+  
+.services-list .service-icon {
+    float: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*margin-bottom: 15px;*/ margin-bottom: 3rem;
+    margin-left: -15px;
+}
+.services-list .service-icon h3.h2 {
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-size: 3rem;
+}
+
+.services-list .service-text {
+  
+    margin-left: 5rem;
+  
+  text-align: left;
+  font-weight: normal;
+  color:black;
+  text-shadow: 0.1px 0.1px 0px #000 !important;
+  
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.1px;
+  
+}
+.services-list .service-text b{
+  font-weight: 700;
+    font-size: 19px;
+}
+
+@media only screen and (max-width: 500px) {
+  .services-list .service-text {
+    font-size: 21px;
+    margin: auto 0; 
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  /*.services-list {
+    margin-left: 4rem;
+  }*/
+  .services-list .service-icon {
+
+    /*margin-bottom: 3rem;*/
+  }
+  .services-list .service-item h3.h2 {
+    /*margin-bottom: 0;
+    margin-left: 20px;*/
+  }
+  /*.services-list .service-item:nth-child(2n + 1) {
+    padding-right: 20px;
+  }
+  .services-list .service-item:nth-child(2n + 2) {
+    padding-left: 20px;
+  }*/
+  /*.services-list .service-item {
+    margin-bottom: 1rem;
+  }*/
+}
+@media only screen and (min-width: 800px) {
+  .services-list .service-text{
+    margin-right: 4rem;  
+  }
+  .service-icon.dnd {
+    margin-top: -22px;
+  }
+}
+
+
+/*Read More Button / Services List*/
+
+.service-text .more {
+  display: none;
+}
+
+.rmbtn button {
+  background-color: #e6e6e6;
+  border: none;
+  display: block;
+  margin: 0 auto -25px;
+}
+
+.rmdbtn {
+    max-width: 120%;
+    margin: 40px 0 70px -70%;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+@media only screen and (max-width: 800px) {
+  .rmdbtn {
+    display: none;
+  }
+}
+
+.rmmbtn {
+    display: none;
+  }
+  
+@media only screen and (max-width: 800px) {
+  .rmmbtn {
+    display:block;
+    max-width: 80%;
+    margin: 10px auto 70px;
+    border-bottom: 1px solid;
+  }
+}
+
+
+
+/*------------------------------------------------ Case Studies / Works --------------------------------------*/
+.s-works {
+  background-color: #987AF9;
+}
+.s-works .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #151515;
+}
+.s-works .intro-wrap {
+  padding: 0rem 0 25.2rem;
+  background: none;
+}
+
+/*---------------------------------------------------- Contact -----------------------------------------*/
+.s-contact{
+  background-image: none;
+  background: rgba(31,41,55) center top no-repeat;
+}
+.contact__line{
+  left:auto;
+  right:7.2rem;
+}
+.s-contact .overlay{
+  opacity: 0;  
+}
+.contact-content{
+  padding-bottom:3rem;
+}
+.contact-content h3{
+  font-size: 2rem; margin-bottom: 5rem; font-family: 'Google Sans Display';
+}
+.contact-content input[type="email"], .contact-content input[type="text"], .contact-content textarea {
+    color: #39b54a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 2rem;
+}
+
+.contact-content input[type="text"]::placeholder, .contact-content input[type="email"]::placeholder, .contact-content textarea::placeholder {
+    color: #828282 !important;
+}
+.contact-content input[type="submit"] {
+    font-size: 1.5rem;
+}
+.contact-primary textarea {
+  min-height: 11rem;
+}
+.message-success {
+    color: #39b54a;
+    text-align: center;
+    margin-top: 20%;
+    font-size:2rem;
+}
+input#formspHp {
+    display: none;
+}
+.submit-loader .text-loader{
+  display:inline-block;
+}
+.s-loader{
+  margin:0;
+  display:inline-block;
+}
+/*.cinfo {
+  text-align:start;
+}*/
+.cinfo h5{
+  font-size:2rem;
+  font-weight: 600;
+  font-family: 'Google Sans Display';
+}
+
+.cinfo p {
+    color: #e6e6e6;
+    font-size:1.7rem;
+    font-family: 'Google Sans Display';
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 500px){
+.contact-content {
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 0rem;
+}
+.contact-content h3 {
+    margin-bottom: 5rem;
+}
+.s-contact .section-header{
+    margin-bottom: 3rem;
+}
+
+/*.home-content .home-content__main {
+    text-align: start;
+}*/
+
+
+}
+
+
+/*-------------------------------------------------------------- Footer ------------------------------------------------------*/
+footer {
+  padding: 7rem 0 2rem;
+}
+@media only screen and (max-width: 800px){
+.footer-main .left {
+    margin-bottom: 9rem; margin-left: -5px;
+}}
+.footer-bottom {
+  margin-top: 2rem;
+}
+
+.footer-logo .site-logo{
+  display:block;
+  width:200px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 600px){
+.footer-logo {
+  width: auto;
+}}
+.footer-logo{
+  background:none;
+}
+
+.footer-subscribe #mc-form input[type="email"]{
+  font-size: 2rem;
+}
