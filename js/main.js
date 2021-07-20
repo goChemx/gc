@@ -338,12 +338,13 @@
     
                 $.ajax({
     
+                    method: "POST",
                     url: "https://submit-form.com/iB0A4735",
                     headers: {
-                        'Content-Type':'application/json',
-                        'Accept', 'application/json'
+                        "Content-Type":"application/json",
+                        "Accept":"application/json"
                     },
-                    method: "POST",
+                    
                     dataType: "json",
                     data: $(form).serialize(),
                     beforeSend: function() { 
