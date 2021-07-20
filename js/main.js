@@ -323,7 +323,7 @@
     };
 
 
-   /* Contact Form
+   /* Contact Form ---- Formspree
     * ------------------------------------------------------ */
     var clContactForm = function() {
         
@@ -354,13 +354,13 @@
                             $('.message-warning').fadeOut();
                             $('#contactForm').fadeOut();
                             $('.message-success').fadeIn();
-                        /*}
+                        //}
                         // There was an error
-                        else {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').html(msg);
-                            $('.message-warning').slideDown("slow");
-                        }*/
+                        //else {
+                        //    sLoader.slideUp("slow"); 
+                        //    $('.message-warning').html(msg);
+                        //    $('.message-warning').slideDown("slow");
+                        //}
     
                     },
                     error: function() {
