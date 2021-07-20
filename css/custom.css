@@ -207,7 +207,8 @@ strong, b {
 
 /*------------------------------------------------------------- About ----------------------------------------------------*/
 .s-about{
-  background:linear-gradient(135deg,#56ab2f,#a8e063);
+    /*background:linear-gradient(135deg,#56ab2f,#a8e063);*/
+    background-color: #39b54a;
 }
 .s-about h1{
   /*font-weight: 700; letter-spacing: 0.1rem;*/
