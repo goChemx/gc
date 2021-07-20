@@ -338,24 +338,24 @@
     
                 $.ajax({
     
-                    url: 'https://submit-form.com/iB0A4735',
+                    url: "https://submit-form.com/iB0A4735",
                     headers: {
                         'Content-Type':'application/json',
                         'Accept', 'application/json'
                     },
-                    method: 'POST',
-                    dataType: 'json',
+                    method: "POST",
+                    dataType: "json",
                     data: $(form).serialize(),
                     beforeSend: function() { 
     
-                        sLoader.slideDown('slow');
+                        sLoader.slideDown("slow");
     
                     },
                     success: function(msg) {
     
                         // Message was sent
                         //if (msg == 'OK') {
-                            sLoader.slideUp('slow'); 
+                            sLoader.slideUp("slow"); 
                             $('.message-warning').fadeOut();
                             $('#contactForm').fadeOut();
                             $('.message-success').fadeIn();
