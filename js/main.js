@@ -346,7 +346,9 @@
                     },
                     
                     dataType: "json",
-                    data: $(form).serialize(),
+                    data: {
+                        message: "Hello, World",
+                     },
                     beforeSend: function() { 
     
                         sLoader.slideDown("slow");
