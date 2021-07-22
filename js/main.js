@@ -1,5 +1,5 @@
 /* ===================================================================
- * Glint - Main JS
+ * goChem - Main JS
  *
  * ------------------------------------------------------------------- */
 
@@ -326,42 +326,46 @@
     
    /* Contact Form ---- Formspark
     * ------------------------------------------------------ */
-    var clContactForm = function() {
-        
+    var clContactForm = function () {
+
         /* local validation */
         $('#contactForm').validate({
-        
+
             /* submit via ajax */
-            submitHandler: function(form) {
-    
+            submitHandler: function (form) {
+
                 var sLoader = $('.submit-loader');
-    
+
+                var myForm = document.querySelector("#contactForm");
+                var fdata = new FormData(myForm);
+                var fJSON = Object.fromEntries(fdata.entries());
+
                 $.ajax({
-    
+
                     method: "POST",
+
                     url: "https://submit-form.com/iB0A4735",
-                    headers: {
-                        "Content-Type":"application/json",
-                        "Accept":"application/json"
-                    },
-                    
+
+                    accept: 'application/json',
+                    //contentType: 'application/json',
+
+                    data: fJSON,
+
                     dataType: "json",
-                    data: {
-                        message: "Hello, World",
-                     },
-                    beforeSend: function() { 
-    
+
+                    beforeSend: function () {
+
                         sLoader.slideDown("slow");
-    
+
                     },
-                    success: function(msg) {
-    
+                    success: function (msg) {
+
                         // Message was sent
                         //if (msg == 'OK') {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').fadeOut();
-                            $('#contactForm').fadeOut();
-                            $('.message-success').fadeIn();
+                        sLoader.slideUp("slow");
+                        $('.message-warning').fadeOut();
+                        $('#contactForm').fadeOut();
+                        $('.message-success').fadeIn();
                         //}
                         // There was an error
                         //else {
@@ -369,19 +373,19 @@
                         //    $('.message-warning').html(msg);
                         //    $('.message-warning').slideDown("slow");
                         //}
-    
+
                     },
-                    error: function() {
-    
-                        sLoader.slideUp("slow"); 
+                    error: function () {
+
+                        sLoader.slideUp("slow");
                         $('.message-warning').html("Something went wrong. Please try again.");
                         $('.message-warning').slideDown("slow");
-    
+
                     }
-    
+
                 });
             }
-    
+
         });
     }; 
     
