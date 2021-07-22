@@ -420,15 +420,10 @@ strong, b {
 .contact-primary textarea {
   min-height: 11rem;
 }
-.message-success {
-    color: #39b54a;
-    text-align: center;
-    margin-top: 20%;
-    font-size:2rem;
-}
 input#formspHp {
     display: none;
 }
+
 .submit-loader .text-loader{
   display:inline-block;
 }
@@ -436,9 +431,21 @@ input#formspHp {
   margin:0;
   display:inline-block;
 }
-/*.cinfo {
-  text-align:start;
-}*/
+.message-success {
+    color: #39b54a;
+    text-align: center;
+    margin-top: 12%;
+    font-size:2rem;
+}
+span.fs-tick {
+    display: block;
+    border: 1px solid;
+    border-radius: 50px;
+    max-width: fit-content;
+    padding: 0px 20px;
+    font-size: 30px;
+    margin: 0 auto 20px;
+}
 .cinfo h5{
   font-size:2rem;
   font-weight: 600;
@@ -463,12 +470,6 @@ input#formspHp {
 .s-contact .section-header{
     margin-bottom: 3rem;
 }
-
-/*.home-content .home-content__main {
-    text-align: start;
-}*/
-
-
 }
 
 
